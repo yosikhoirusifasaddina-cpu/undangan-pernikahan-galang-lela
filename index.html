@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Undangan Pernikahan Rania & Dimas</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f5f9;--surface:#ffffff;--ink:#1d2745;--muted:#5d6682;--accent:#a8667a;--line:#d9dce8;--cover:#1d2745;--cover-ink:#f4f5f9;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#121a30;--surface:#1b2542;--ink:#eef0f7;--muted:#a9b0c8;--accent:#e0a3b4;--line:#2f3a5c;--cover:#0b1124;--cover-ink:#eef0f7}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#121a30;--surface:#1b2542;--ink:#eef0f7;--muted:#a9b0c8;--accent:#e0a3b4;--line:#2f3a5c;--cover:#0b1124;--cover-ink:#eef0f7}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Jost,system-ui,sans-serif;font-weight:300;line-height:1.7;font-size:17px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;margin:0;line-height:1.1}
+section{max-width:640px;margin:0 auto;padding:72px 24px;text-align:center}
+p{margin:0 0 14px}
+.muted{color:var(--muted)}
+h2{font-size:2.4rem;margin-bottom:24px}
+a{color:inherit}
+/* cover */
+#cover{position:fixed;inset:0;z-index:50;background:var(--cover);color:var(--cover-ink);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;text-align:center;transition:transform .9s cubic-bezier(.7,0,.2,1)}
+#cover.open{transform:translateY(-100%)}
+.arch{width:min(78vw,300px);aspect-ratio:3/4;border:1px solid var(--accent);border-radius:999px 999px 0 0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 18px;position:relative}
+.arch::after{content:"";position:absolute;inset:9px;border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);border-radius:999px 999px 0 0;pointer-events:none}
+.arch small{font-size:.8rem;letter-spacing:.12em;opacity:.8}
+.arch h1{font-size:3rem;margin:14px 0}
+.arch h1 span{display:block;font-style:italic;font-size:1.6rem;color:var(--accent);margin:4px 0}
+.guest{margin:28px 0 18px;font-size:.95rem;opacity:.85}
+.btn{display:inline-block;border:1px solid var(--accent);background:var(--accent);color:#fff;padding:12px 28px;border-radius:999px;font:500 .95rem Jost,sans-serif;cursor:pointer;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+/* hero */
+#hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center}
+#hero h1{font-size:clamp(3.4rem,15vw,5.4rem)}
+#hero h1 i{display:block;font-size:.4em;color:var(--accent);margin:8px 0}
+.date{margin-top:28px;font-size:1.05rem}
+.count{display:flex;justify-content:center;gap:12px;margin-top:28px}
+.count div{min-width:68px;padding:10px 6px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.count b{display:block;font:400 1.9rem "Cormorant Garamond",serif}
+.count span{font-size:.78rem;color:var(--muted)}
+/* couple */
+.couple{display:grid;gap:36px}
+.person h3{font-size:2rem;color:var(--accent)}
+.amp{font:italic 2.6rem "Cormorant Garamond",serif;color:var(--accent)}
+/* events */
+.events{display:grid;gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px 20px 4px 4px;padding:28px 22px}
+.card h3{font-size:1.9rem;margin-bottom:10px}
+/* forms */
+form{display:grid;gap:12px;text-align:left}
+label{font-size:.9rem;color:var(--muted)}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit}
+.gift{display:inline-flex;flex-direction:column;gap:6px;align-items:center}
+.acc{font:500 1.4rem Jost,sans-serif;letter-spacing:.04em}
+#thanks{display:none;color:var(--accent);margin-top:14px}
+footer{padding:40px 24px calc(48px + env(safe-area-inset-bottom,0px));text-align:center;font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-style:italic;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){#cover{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div id="cover">
+  <div class="arch">
+    <small>Undangan Pernikahan</small>
+    <h1>Rania<span>&amp;</span>Dimas</h1>
+    <small>Sabtu, 12 Desember 2026</small>
+  </div>
+  <p class="guest">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+  <button class="btn" id="openBtn" type="button">Buka Undangan</button>
+</div>
+
+<main>
+  <section id="hero">
+    <p class="muted">Kami mengundang Anda untuk hadir di hari bahagia kami</p>
+    <h1>Rania<i>dan</i>Dimas</h1>
+    <p class="date">Sabtu, 12 Desember 2026</p>
+    <div class="count" aria-live="off">
+      <div><b id="d">0</b><span>Hari</span></div>
+      <div><b id="h">0</b><span>Jam</span></div>
+      <div><b id="m">0</b><span>Menit</span></div>
+      <div><b id="s">0</b><span>Detik</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Mempelai</h2>
+    <p class="muted">Dengan rahmat Allah SWT, kami akan melangsungkan pernikahan putra-putri kami:</p>
+    <div class="couple">
+      <div class="person"><h3>Rania Putri Maharani</h3><p class="muted">Putri dari Bapak Ahmad Santoso<br>dan Ibu Siti Aminah</p></div>
+      <div class="amp">&amp;</div>
+      <div class="person"><h3>Dimas Arya Pratama</h3><p class="muted">Putra dari Bapak Hendra Wijaya<br>dan Ibu Lestari Dewi</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Acara</h2>
+    <div class="events">
+      <div class="card">
+        <h3>Akad Nikah</h3>
+        <p>Sabtu, 12 Desember 2026<br>Pukul 08.00 – 10.00 WIB</p>
+        <p class="muted">Masjid Al-Ikhlas<br>Jl. Merdeka No. 12, Indramayu</p>
+      </div>
+      <div class="card">
+        <h3>Resepsi</h3>
+        <p>Sabtu, 12 Desember 2026<br>Pukul 11.00 – 14.00 WIB</p>
+        <p class="muted">Gedung Serbaguna Mutiara<br>Jl. Jenderal Sudirman No. 45, Indramayu</p>
+      </div>
+    </div>
+    <p style="margin-top:24px"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Indramayu" target="_blank" rel="noopener">Buka Peta Lokasi</a></p>
+  </section>
+
+  <section>
+    <h2>Konfirmasi Kehadiran</h2>
+    <p class="muted">Mohon konfirmasi agar kami dapat menyiapkan tempat untuk Anda.</p>
+    <form id="rsvp">
+      <div><label for="nm">Nama</label><input id="nm" required autocomplete="name"></div>
+      <div><label for="st">Kehadiran</label>
+        <select id="st"><option>Hadir</option><option>Tidak hadir</option><option>Masih ragu</option></select></div>
+      <div><label for="jm">Jumlah tamu</label><input id="jm" type="number" min="1" max="10" value="1"></div>
+      <div><label for="ps">Ucapan dan doa</label><textarea id="ps" rows="3"></textarea></div>
+      <button class="btn" type="submit">Kirim lewat WhatsApp</button>
+    </form>
+    <p id="thanks">Terima kasih, konfirmasi Anda siap dikirim.</p>
+  </section>
+
+  <section>
+    <h2>Hadiah Digital</h2>
+    <p class="muted">Doa restu Anda sudah cukup bagi kami. Jika ingin berbagi tanda kasih, silakan melalui:</p>
+    <div class="card gift">
+      <span class="muted">Bank BCA a.n. Rania Putri Maharani</span>
+      <span class="acc" id="acc">1234567890</span>
+      <button class="btn ghost" id="copy" type="button">Salin nomor rekening</button>
+    </div>
+  </section>
+</main>
+
+<footer>Terima kasih atas doa dan kehadiran Anda.<br>Rania &amp; Dimas</footer>
+
+<script>
+(function(){
+  var cover=document.getElementById('cover');
+  document.getElementById('openBtn').addEventListener('click',function(){
+    cover.classList.add('open');document.body.style.overflow='';
+    setTimeout(function(){cover.style.display='none'},1000);
+  });
+  document.body.style.overflow='hidden';
+
+  // Ganti tanggal acara di sini (format: tahun-bulan-tanggalTjam:menit)
+  var target=new Date('2026-12-12T08:00:00+07:00').getTime();
+  function tick(){
+    var t=Math.max(0,target-Date.now());
+    document.getElementById('d').textContent=Math.floor(t/864e5);
+    document.getElementById('h').textContent=Math.floor(t%864e5/36e5);
+    document.getElementById('m').textContent=Math.floor(t%36e5/6e4);
+    document.getElementById('s').textContent=Math.floor(t%6e4/1e3);
+  }
+  tick();setInterval(tick,1000);
+
+  // Ganti nomor WhatsApp mempelai (awali dengan 62, tanpa +)
+  var WA='6281234567890';
+  document.getElementById('rsvp').addEventListener('submit',function(e){
+    e.preventDefault();
+    var msg='Halo, saya '+document.getElementById('nm').value+
+      '. Konfirmasi: '+document.getElementById('st').value+
+      ' ('+document.getElementById('jm').value+' orang). Ucapan: '+document.getElementById('ps').value;
+    document.getElementById('thanks').style.display='block';
+    window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(msg),'_blank','noopener');
+  });
+
+  document.getElementById('copy').addEventListener('click',function(){
+    var b=this,n=document.getElementById('acc').textContent;
+    function done(){b.textContent='Nomor tersalin';setTimeout(function(){b.textContent='Salin nomor rekening'},2000)}
+    try{navigator.clipboard.writeText(n).then(done,done)}catch(x){done()}
+  });
+})();
+</script>
+</body>
+</html>
